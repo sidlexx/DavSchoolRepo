@@ -29,6 +29,7 @@ export default class Forms extends React.Component{
    }
 
    onSubmit=(e)=>{
+       e.preventDefault();
     this.setState({
         studentData:this.findStudent(this.state.enrollNum,this.state.classRoll),
         showMarks:true
